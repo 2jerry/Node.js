@@ -1,0 +1,15 @@
+/* [ 배열의 요소 확인하기] 
+ */
+var Users = [{name:'소녀시대',age :20},{name:'걸스데이',age:22},{name:'티아라',age:23}];
+
+console.log('배열 요소의 수 : %d', Users.length);
+for (var i = 0; i < Users.length; i++) {
+	console.log('배열 요소 #' + i + ' : %s', Users[i].name);
+}
+
+// forEach 문 사용하기 
+// function(배열의 요소, 요소의 인덱스)
+console.log('\nforEach 구문 사용하기');
+Users.forEach(function(item, index) {
+	console.log('배열 요소 #' + index + ' : %s' + ', %d', item.name,item.age);
+});
